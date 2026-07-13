@@ -1,5 +1,12 @@
 import Link from "next/link";
-import {CalendarDays, Facebook, Twitter, Instagram, Mail, Phone} from "lucide-react";
+import {
+  CalendarDays,
+  Facebook,
+  TwitterIcon,
+  Instagram,
+  Mail,
+  Phone,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -32,10 +39,17 @@ export default function Footer() {
               </a>
               <a
                 href="#"
-                aria-label="Twitter"
+                aria-label="X"
                 className="text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"
               >
-                <Twitter className="h-5 w-5" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.598-9.826L0 1.153h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.04L6.486 3.24H4.297L17.61 20.644z" />
+                </svg>
               </a>
               <a
                 href="#"
@@ -112,7 +126,7 @@ export default function Footer() {
                 <Mail className="h-4 w-4" /> support@eventhive.app
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4" /> +1 (555) 010-2024
+                <Phone className="h-4 w-4" /> +8801234567899
               </li>
             </ul>
           </div>
