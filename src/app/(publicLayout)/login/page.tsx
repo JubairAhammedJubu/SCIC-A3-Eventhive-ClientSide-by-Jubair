@@ -225,7 +225,7 @@ export default function LoginPage() {
                 ) : (
                   <Shield className="w-3.5 h-3.5 text-emerald-500" />
                 )}
-                Demo Admin
+                Admin
               </motion.button>
             </div>
 
