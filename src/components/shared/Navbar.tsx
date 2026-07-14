@@ -17,7 +17,7 @@ const NAV_CONFIG: Record<Role, {name: string; href: string}[]> = {
   user: [
     {name: "Home", href: "/"},
     {name: "Explore Events", href: "/events"},
-    {name: "Dashboard", href: "/dashboard/user/dashboard"},
+    {name: "Dashboard", href: "/dashboard/user"},
     {name: "Add Event", href: "/dashboard/user/add-event"},
     {name: "My Events", href: "/dashboard/user/my-events"},
   ],
@@ -226,6 +226,14 @@ export default function Navbar() {
                         </div>
 
                         <div className="p-1.5">
+                          {/* <Link
+                            href={dashboardLinks[role]}
+                            onClick={() => setIsDropdownOpen(false)}
+                            className="flex items-center gap-2.5 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-xl transition-all"
+                          >
+                            <LayoutDashboard className="w-4 h-4" />
+                            Dashboard
+                          </Link> */}
                           <Link
                             href={`${dashboardLinks[role]}/profile`}
                             onClick={() => setIsDropdownOpen(false)}
