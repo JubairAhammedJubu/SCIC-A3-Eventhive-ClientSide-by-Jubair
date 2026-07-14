@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="border-t border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-[#0b0d12]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-3 md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <span>
                 <img
@@ -79,7 +79,7 @@ export default function Footer() {
                   href="/events?sort=newest"
                   className="hover:text-indigo-600 dark:hover:text-indigo-400"
                 >
-                  New events
+                  New event
                 </Link>
               </li>
               <li>
@@ -87,7 +87,7 @@ export default function Footer() {
                   href="/dashboard/user/add-event"
                   className="hover:text-indigo-600 dark:hover:text-indigo-400"
                 >
-                  Host an event
+                  Host event
                 </Link>
               </li>
             </ul>
@@ -123,7 +123,7 @@ export default function Footer() {
             </h3>
             <ul className="mt-3 space-y-2 text-sm text-gray-500 dark:text-gray-400">
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4" /> support@eventhive.app
+                <Mail className="h-4 w-4" /> eventhive@sup.app
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" /> +8801234567899
